@@ -227,7 +227,7 @@ export default {
 
 <style scope>
 .custom-background {
-  background-image: url("../../assets/ygg.png");
+  background-image: url("../../assets/banner.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
