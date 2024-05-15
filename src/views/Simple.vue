@@ -38,7 +38,7 @@ export default {
           name: "แมวยืน",
           img: "https://i.pinimg.com/236x/ec/88/23/ec88237079284a706a2bd5a3e20b6d0c.jpg",
         },
-        { name: "แมวอ้วน", img: require("../assets/รูปนักศึกษา.png") },
+        { name: "แมวอ้วน", img: require("../assets/ygg.png") },
       ],
     };
   },
