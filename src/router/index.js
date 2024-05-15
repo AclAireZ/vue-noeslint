@@ -11,14 +11,16 @@ const routes = [
     name: 'home',
     component: HomeView
   },
+  
   {
     path: '/',
-    name: 'toolbar',
+    name: 'Navbar',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import('../views/Toolbar.vue'),
+    component: () => import('../views/NavBar.vue'),   
     children: [
+
       {
         path: '/about',
         name: 'about',
@@ -26,6 +28,22 @@ const routes = [
         // this generates a separate chunk (about.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
         component: () => import('../views/AboutView.vue')
+      },
+      {
+        path: '/products',
+        name: 'products',
+        // route level code-splitting
+        // this generates a separate chunk (about.[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+        component: () => import('../views/ProductPage.vue')
+      },
+      {
+        path: '/markets',
+        name: 'markets',
+        // route level code-splitting
+        // this generates a separate chunk (about.[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+        component: () => import('../views/MarketPage.vue')
       },
       {
         path: '/me',
@@ -42,6 +60,38 @@ const routes = [
         // this generates a separate chunk (about.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
         component: () => import('../views/MyPage.vue')
+      },
+      {
+        path: '/simple',
+        name: 'simple',
+        // route level code-splitting
+        // this generates a separate chunk (about.[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+        component: () => import('../views/Simple.vue')
+      },
+      {
+        path: '/grade',
+        name: 'grade',
+        // route level code-splitting
+        // this generates a separate chunk (about.[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+        component: () => import('../views/GradeCal.vue')
+      },
+      {
+        path: '/api',
+        name: 'api',
+        // route level code-splitting
+        // this generates a separate chunk (about.[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+        component: () => import('../views/Apicon.vue')
+      },
+      {
+        path: '/cart',
+        name: 'cart',
+        // route level code-splitting
+        // this generates a separate chunk (about.[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+        component: () => import('../views/CartPage.vue')
       },
     ]
   }
